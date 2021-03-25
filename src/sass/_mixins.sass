@@ -1,0 +1,27 @@
+@mixin button($color: green)
+	padding: 3px
+	width: 26px
+	height: 26px
+	text-align: center
+	position: relative
+	display: inline-block
+	color: rgba(0, 0, 0, .7)
+	background: transparent
+	outline: none
+	border: none
+
+	span
+		font-size: 20px
+
+	&:active, &.active
+		color: $color
+
+	&:hover
+		background: #eee
+		cursor: pointer
+
+
+@mixin clear-list()
+	margin: 0
+	padding: 0
+	list-style: none

@@ -71,7 +71,6 @@ export function $(selector) {
 	return new DOM(selector)
 }
 
-// event.target
 $.create = (tagName, classes='') => {
 	const el = document.createElement(tagName)
 	if (classes) {
